@@ -1,0 +1,78 @@
+.transactions {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  direction: rtl;
+  font-family: Vazirmatn, Tahoma, sans-serif;
+  color: #222;
+}
+
+.transactions__title {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+/* ---------- جدول (دسکتاپ) ---------- */
+.transactions__table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: right;
+}
+
+.transactions__table th {
+  color: #888;
+  font-weight: 400;
+  padding: 12px 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.transactions__table td {
+  padding: 12px 8px;
+}
+
+.transactions__income {
+  color: #2fb67c;
+}
+
+.transactions__expense {
+  color: #e5484d;
+}
+
+.transactions__date {
+  font-weight: 600;
+}
+
+/* ---------- کارت (موبایل) ---------- */
+.transactions__cards {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.transactions__card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+
+.transactions__card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transactions__card-desc {
+  margin: 8px 0 0;
+}
+
+@media (max-width: 600px) {
+  .transactions__table {
+    display: none;
+  }
+  .transactions__cards {
+    display: block;
+  }
+}
